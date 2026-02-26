@@ -13,5 +13,20 @@ export default function decorate(block) {
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+
+  // Add "Read more >" link to each card
+  ul.querySelectorAll('.cards-insights-card-body').forEach((body) => {
+    const titleLink = body.querySelector('a');
+    if (titleLink) {
+      const readMore = document.createElement('p');
+      readMore.className = 'cards-insights-read-more';
+      const link = document.createElement('a');
+      link.href = titleLink.href;
+      link.innerHTML = '<strong>Read more &gt;</strong>';
+      readMore.append(link);
+      body.append(readMore);
+    }
+  });
+
   block.replaceChildren(ul);
 }

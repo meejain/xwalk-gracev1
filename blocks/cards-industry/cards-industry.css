@@ -3,17 +3,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .cards-industry > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
-
-.cards-industry .cards-industry-card-body {
-  margin: 16px;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
 }
 
 .cards-industry .cards-industry-card-image {
@@ -22,6 +19,38 @@
 
 .cards-industry > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2.2 / 1;
   object-fit: cover;
+  display: block;
+}
+
+.cards-industry .cards-industry-card-body {
+  background-color: var(--accent-color);
+  padding: 14px 25px;
+  text-align: center;
+}
+
+.cards-industry .cards-industry-card-body a {
+  font-family: var(--heading-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+
+.cards-industry .cards-industry-card-body a::after {
+  content: "\203A";
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.cards-industry .cards-industry-card-body a:hover {
+  color: var(--text-color);
+}
+
+@media (width >= 600px) {
+  .cards-industry > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,3 +1,7 @@
+main > .section.hero-corporate-container {
+  margin: 0;
+}
+
 .hero-corporate-container .hero-corporate-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,8 +9,14 @@
 
 .hero-corporate {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 80px;
+  overflow: hidden;
 }
 
 .hero-corporate h1,
@@ -16,22 +26,59 @@
 .hero-corporate h5,
 .hero-corporate h6,
 .hero-corporate p {
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--background-color);
+  color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-corporate.no-image * {
+.hero-corporate h1 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 100;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.hero-corporate p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-corporate a.button:any-link {
+  position: relative;
+  z-index: 2;
+  padding: 13px 30px;
+}
+
+.hero-corporate a.button:any-link::after {
+  content: "\203A";
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.hero-corporate.no-image h1,
+.hero-corporate.no-image h2,
+.hero-corporate.no-image h3,
+.hero-corporate.no-image p {
   color: var(--text-color);
 }
 
 .hero-corporate picture {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
-  object-fit: cover;
   box-sizing: border-box;
+}
+
+.hero-corporate picture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 35%);
+  z-index: 1;
 }
 
 .hero-corporate img {
@@ -42,6 +89,7 @@
 
 @media (width >= 900px) {
   .hero-corporate {
-    padding: 40px 32px;
+    min-height: 500px;
+    padding: 280px 20px 215px;
   }
 }

@@ -1,0 +1,73 @@
+.cards-people > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-people > ul > li {
+  background-color: var(--background-color);
+  text-align: center;
+  overflow: hidden;
+}
+
+.cards-people .cards-people-card-image {
+  line-height: 0;
+}
+
+.cards-people > ul > li img {
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  object-fit: cover;
+}
+
+.cards-people .cards-people-card-body {
+  padding: 16px 20px 20px;
+}
+
+.cards-people .cards-people-card-body p {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* CTA link - bold text with arrow */
+.cards-people .cards-people-card-body p strong a,
+.cards-people .cards-people-card-body a.button {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 0;
+  border: none;
+  font-family: var(--heading-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  white-space: normal;
+  transition: color var(--transition-speed);
+}
+
+.cards-people .cards-people-card-body p strong a::after,
+.cards-people .cards-people-card-body a.button::after {
+  content: "\203A";
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.cards-people .cards-people-card-body p strong a:hover,
+.cards-people .cards-people-card-body a.button:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+@media (width >= 600px) {
+  .cards-people > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
