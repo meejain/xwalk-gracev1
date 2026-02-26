@@ -5,10 +5,12 @@
 
 .columns-cta img {
   width: 100%;
+  display: block;
 }
 
 .columns-cta > div > div {
   order: 1;
+  padding: 24px 0;
 }
 
 .columns-cta > div > .columns-cta-img-col {
@@ -17,17 +19,42 @@
 
 .columns-cta > div > .columns-cta-img-col img {
   display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.columns-cta p {
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.columns-cta a.button:any-link {
+  background-color: #fff;
+  color: var(--text-color);
+  border: 0;
+}
+
+.columns-cta a.button:hover {
+  background-color: var(--accent-hover-color);
+  color: #fff;
 }
 
 @media (width >= 900px) {
   .columns-cta > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
+    gap: 40px;
   }
 
   .columns-cta > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns-cta p {
+    font-size: 18px;
   }
 }

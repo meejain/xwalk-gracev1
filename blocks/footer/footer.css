@@ -1,20 +1,82 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: rgb(30 30 30);
+  color: #fff;
+  font-size: 12px;
+  font-family: var(--body-font-family);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 830px;
+  padding: 55px 24px;
+  text-align: center;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+/* Copyright */
+footer .footer .default-content-wrapper p:first-child {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Links row */
+footer .footer .default-content-wrapper p:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+footer .footer .default-content-wrapper p:nth-child(2) a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 20px;
+  line-height: 2;
+}
+
+/* Trademark */
+footer .footer .default-content-wrapper p:nth-child(3) {
+  color: var(--light-color);
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+footer .footer .default-content-wrapper p:nth-child(3) strong {
+  font-weight: 700;
+}
+
+/* Standard Industries logo */
+footer .footer .default-content-wrapper p:nth-child(4) {
+  margin: 0;
+}
+
+footer .footer .default-content-wrapper p:nth-child(4) a {
+  display: inline-block;
+}
+
+footer .footer .default-content-wrapper p:nth-child(4) img {
+  width: 300px;
+  height: auto;
+}
+
+/* Link hover and last-child states */
+footer .footer .default-content-wrapper p:nth-child(2) a:hover {
+  color: var(--accent-color);
+}
+
+footer .footer .default-content-wrapper p:nth-child(2) a:last-child {
+  margin-right: 0;
+}
+
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 55px 32px;
   }
 }
