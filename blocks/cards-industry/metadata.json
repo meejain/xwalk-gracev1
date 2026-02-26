@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-industry",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-02-26T12:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://grace.com/",
+    "originPage": "Corporate homepage - industries section",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "industry-nav",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + link-label",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "industry navigation tiles",
+      "category browsing grids",
+      "image-label tile layouts"
+    ],
+    "notSuitableFor": [
+      "detailed product cards with descriptions",
+      "blog article listings",
+      "text-heavy card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-26T12:00:00.000Z"
+  }
+}

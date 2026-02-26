@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-02-26T12:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://grace.com/",
+    "originPage": "Corporate homepage - video section",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "video-callout",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background-image + heading + subtext + video-link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "video callout sections",
+      "media highlight areas with dark backgrounds",
+      "pages featuring embedded video content"
+    ],
+    "notSuitableFor": [
+      "text-only sections",
+      "light background video sections",
+      "inline video players without hero treatment"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-26T12:00:00.000Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-02-26T12:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://grace.com/",
+    "originPage": "Corporate homepage - people and careers",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "people-cta",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + paragraph + CTA-button per column",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "two-column layouts with images and CTAs",
+      "people and careers sections",
+      "side-by-side content with call-to-action buttons"
+    ],
+    "notSuitableFor": [
+      "text-only column layouts",
+      "three-column layouts",
+      "comparison tables or data grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-26T12:00:00.000Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://grace.com/",
+  "path": "index",
+  "timestamp": "2026-02-26T14:29:09.940Z",
+  "title": "Home",
+  "template": "homepage",
+  "blocks": [
+    "hero-corporate",
+    "cards-product",
+    "cards-product",
+    "cards-product",
+    "cards-product",
+    "columns-cta",
+    "columns-cta",
+    "cards-industry",
+    "cards-industry",
+    "cards-industry",
+    "cards-industry",
+    "cards-industry",
+    "cards-industry",
+    "hero-video",
+    "cards-insights",
+    "cards-insights",
+    "cards-insights",
+    "cards-insights"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://grace.com/"
+      ],
+      "description": "Corporate homepage for Grace specialty chemicals company featuring product categories, industry solutions, career highlights, and company information",
+      "blocks": [
+        {
+          "name": "hero-corporate",
+          "instances": [
+            ".generic-hero .hero__section"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            ".cmp-card.bio"
+          ]
+        },
+        {
+          "name": "columns-cta",
+          "instances": [
+            ".col-xs-12.col-lg-6 > .section > section.white-bkgd"
+          ]
+        },
+        {
+          "name": "cards-industry",
+          "instances": [
+            "section.background-image .cmp-card.small"
+          ]
+        },
+        {
+          "name": "hero-video",
+          "instances": [
+            ".cmp-media-callout.slate-bkgd"
+          ]
+        },
+        {
+          "name": "cards-insights",
+          "instances": [
+            "section#blogs .cmp-media-callout"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".generic-hero",
+          "style": null,
+          "blocks": [
+            "hero-corporate"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Company Tagline",
+          "selector": "section#aboutgrace",
+          "style": "light-gray",
+          "blocks": [],
+          "defaultContent": [
+            "section#aboutgrace .cmp-card-list .card-content .text"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Products Heading",
+          "selector": [
+            "section:not([id]):not(.background-image) > article.m-p-t-md .rich-text",
+            "section .rich-text h2"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#text-391f94f9d9 h2"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Product Categories",
+          "selector": "section article .col-xs-12.col-lg-3",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "People and Careers",
+          "selector": "section article .col-xs-12.col-lg-6",
+          "style": null,
+          "blocks": [
+            "columns-cta"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Industries",
+          "selector": "section.background-image",
+          "style": "background-image",
+          "blocks": [
+            "cards-industry"
+          ],
+          "defaultContent": [
+            "section.background-image .col-xs-12.col-lg-4 .rich-text h3"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Video Callout",
+          "selector": ".media-callout .cmp-media-callout.slate-bkgd",
+          "style": null,
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Insights from Grace",
+          "selector": "section#blogs",
+          "style": "light-gray",
+          "blocks": [
+            "cards-insights"
+          ],
+          "defaultContent": [
+            "section#blogs > article > h2",
+            "section#allblogs .button__section"
+          ]
+        }
+      ]
+    }
+  ]
+}
